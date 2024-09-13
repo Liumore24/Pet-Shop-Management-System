@@ -1,0 +1,6 @@
+Private Sub pet_pic_Click(sender As Object, e As EventArgs) Handles pet_pic.Click
+        Dim pop As OpenFileDialog = New OpenFileDialog
+        If pop.ShowDialog <> Windows.Forms.DialogResult.Cancel Then
+            pet_pic.Image = Image.FromFile(pop.FileName)
+        End If
+    End Sub
